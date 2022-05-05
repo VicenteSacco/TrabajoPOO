@@ -1,4 +1,3 @@
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -94,7 +93,32 @@ public class Persona{
     public void ImprimirFecha(){
         for(int i=0; i<ListaFecha.size(); i++){
             System.out.println("Fecha: "+ListaFecha.get(i).getFecha());
+            ListaFecha.get(i).ImprimirProducto();
             System.out.println("=================");
         }
+    }
+    
+    public void EliminarFecha(Date fecha){
+        for(int i=0; i<ListaFecha.size(); i++){
+            if(fecha == ListaFecha.get(i).getFecha()){
+                ListaFecha.remove(i);
+                break;
+            }
+        }
+    }
+    
+    public void ModificarFecha(Date fechaActual, Date fechaNueva){
+        for(int i=0; i<ListaFecha.size(); i++){
+            if(fechaActual == ListaFecha.get(i).getFecha())
+                ListaFecha.get(i).setFecha(fechaNueva);
+        }
+    }
+    
+    public Fecha BuscarFecha(Date fecha){
+        for(int i=0; i<ListaFecha.size(); i++){
+            if(fecha == ListaFecha.get(i).getFecha())
+                return ListaFecha.get(i);
+        }
+        return null;
     }
 }
