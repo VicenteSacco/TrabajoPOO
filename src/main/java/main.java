@@ -1,5 +1,3 @@
-import java.text.ParseException;
-import java.util.Scanner;
 /*
   Vicente Sacco 20.502.134-5
   
@@ -7,63 +5,62 @@ import java.util.Scanner;
 
   Jorge Gonzalez 18.236.888-1
 */
+
+import java.util.Scanner;
+
 public class main {
-     public static Persona persona =new Persona();
-     public static Fecha fecha=new Fecha();
-     
-     public static void main(String args[]) throws ParseException {
-       Scanner Entrada;
-       int opcion;
-       do{
-           
-            System.out.println("1- Crear Persona");
-            System.out.println("2- Imprimir Persona");
-            System.out.println("3- Eliminar Persona");
-            System.out.println("4- Crear Fecha");
-            System.out.println("5- Imprimir Fecha");
-            System.out.println("6- Eliminar Fecha");
-            System.out.println("7- Salir");
+    
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        Persona persona = new Persona();
+        Fecha fecha = new Fecha();
+        Producto producto = new Producto();
+        
+        int opcion;
 
-            System.out.println("Digite la opcion: ");
-            Entrada=new Scanner(System.in);
-            opcion=Entrada.nextInt();
-           
-           switch(opcion){
-               case 1:
-                    //Crear Persona
-                    persona.CrearPersona();
-               break;
-               
-               case 2:
-                   //Imprimir Persona
-                     persona.ImprimirDatos();
-               break;
-               
-               case 3:
-                   //Eliminar Persona
-                   
-                   
-               break;
-               
-               
-               case 4:
-                    //Crear Fecha
-                    fecha.CrearFecha(persona);
-               break;
-               
-               case 5: 
-                     //Imprimir Fecha
-                      fecha.ImprimirDatos();
-                break;
-               case 6:
-                     //Eliminar Fecha
-                     
-                break;
-              
-           }
+        System.out.println("Bienvenido! Desea registrarse?");
+        System.out.println("1.- Si");
+        System.out.println("2.- No");
+        System.out.println("Elija opcion: ");
+        opcion=entrada.nextInt();
 
-       }while(opcion!=7);
-       
-       
+        if(opcion==1)
+            persona.CrearPersona();
+        do{
+            System.out.println("=====================");
+            System.out.println("1.- Imprimir Persona");
+            System.out.println("2.- Eliminar Persona");
+            System.out.println("3.- Crear Fecha");
+            System.out.println("4.- Imprimir Fecha");
+            System.out.println("5.- Eliminar Fecha");
+            System.out.println("6.- Crear Producto");
+            System.out.println("7.- Imprimir Producto");
+            System.out.println("8.- Eliminar Producto");
+            System.out.println("9.- Salir");
+            System.out.println("Elija opcion: ");
+            opcion=entrada.nextInt();
+             
+            switch(opcion){
+                case 1: 
+                //Imprimir Persona
+                break;
+
+                case 2: 
+                //Eliminar Persona
+                break;   
+
+                case 3:
+                //Crear Fecha
+                break;
+
+                case 4: 
+                //Imprimir Fecha
+                break;
+
+                case 5:
+                //Eliminar Fecha
+                break;
+            }
+        }while(opcion!=9);
     }
 }
