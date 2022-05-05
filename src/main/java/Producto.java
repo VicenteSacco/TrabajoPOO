@@ -38,6 +38,5 @@ public class Producto{
 
     public void setCalorias(int calorias) {
         this.calorias = calorias;
-    }
-    
-}
+    } 
+} 

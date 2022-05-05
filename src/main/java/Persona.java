@@ -1,7 +1,4 @@
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Persona{
@@ -56,7 +53,7 @@ public class Persona{
     }
 
     //Métodos
-    public void CrearPersona(){
+    public Persona CrearPersona(){
         String nombre;
         float peso,altura;
         
@@ -70,6 +67,7 @@ public class Persona{
         altura = entrada.nextFloat();
         
         Persona persona = new Persona(nombre,peso,altura);
+        return persona;
     }
     
     public void ImprimirPersona(Persona persona){
@@ -78,45 +76,47 @@ public class Persona{
         System.out.println("Altura: "+persona.altura);
     }
     
-    public void CrearFecha() throws ParseException{
+    public void CrearFecha(){
         String fecha;
         
         Scanner entrada = new Scanner(System.in);
         
         System.out.println("Ingrese fecha: ");
         fecha = entrada.next();
-        Date finalFecha = new SimpleDateFormat("dd/mm/yyyy").parse(fecha);
-        Fecha fechaObjeto = new Fecha(finalFecha);
-        ListaFecha.add(fechaObjeto);
+        
+        Fecha objeto = new Fecha();
+        objeto.setFecha(fecha);
+        
+        ListaFecha.add(objeto);
     }
     
     public void ImprimirFecha(){
         for(int i=0; i<ListaFecha.size(); i++){
+            System.out.println("====================================");
             System.out.println("Fecha: "+ListaFecha.get(i).getFecha());
             ListaFecha.get(i).ImprimirProducto();
-            System.out.println("=================");
         }
     }
     
-    public void EliminarFecha(Date fecha){
+    public void EliminarFecha(String fecha){
         for(int i=0; i<ListaFecha.size(); i++){
-            if(fecha == ListaFecha.get(i).getFecha()){
+            if(fecha.equals(ListaFecha.get(i).getFecha())){
                 ListaFecha.remove(i);
                 break;
             }
         }
     }
     
-    public void ModificarFecha(Date fechaActual, Date fechaNueva){
+    public void ModificarFecha(String fechaActual, String fechaNueva){
         for(int i=0; i<ListaFecha.size(); i++){
-            if(fechaActual == ListaFecha.get(i).getFecha())
+            if(fechaActual.equals(ListaFecha.get(i).getFecha()))
                 ListaFecha.get(i).setFecha(fechaNueva);
         }
     }
     
-    public Fecha BuscarFecha(Date fecha){
+    public Fecha BuscarFecha(String fecha){
         for(int i=0; i<ListaFecha.size(); i++){
-            if(fecha == ListaFecha.get(i).getFecha())
+            if(fecha.equals(ListaFecha.get(i).getFecha()))
                 return ListaFecha.get(i);
         }
         return null;

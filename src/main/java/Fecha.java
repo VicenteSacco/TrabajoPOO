@@ -1,37 +1,37 @@
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Fecha {
     //Atributos
-    private Date fecha;
+    private String fecha;
     private ArrayList<Producto> ListaProducto = new ArrayList<Producto>();
 
-    //Constructores
     public Fecha() {
     }
+
     
-    public Fecha(Date fecha) {
+    
+    public Fecha(String fecha) {
         this.fecha = fecha;
     }
 
-    //Accesores(Getters)
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
     public ArrayList<Producto> getListaProducto() {
         return ListaProducto;
     }
-    
-    //Mutadores(Setters)
-    public void setFecha(Date fecha) {
+
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
     public void setListaProducto(ArrayList<Producto> ListaProducto) {
         this.ListaProducto = ListaProducto;
     }
+
+    
     
     public void CrearProducto(){
         String nombre;
@@ -68,10 +68,10 @@ public class Fecha {
         }
     }
     
-    public void ModificarProducto(String nombreEliminar, String nombre, int calorias, int cantidad){
+    public void ModificarProducto(String nombreActual, String nombreNuevo, int calorias, int cantidad){
         for(int i = 0 ; i < ListaProducto.size(); i++){
-            if(nombreEliminar.equals(ListaProducto.get(i).getNombre())){
-                ListaProducto.get(i).setNombre(nombre);
+            if(nombreActual.equals(ListaProducto.get(i).getNombre())){
+                ListaProducto.get(i).setNombre(nombreNuevo);
                 ListaProducto.get(i).setCalorias(calorias);
                 ListaProducto.get(i).setCantidad(cantidad);
             }
