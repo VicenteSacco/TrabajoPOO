@@ -1,11 +1,6 @@
 
 package com.mycompany.trabajo.Ventanas;
 
-/**
- *
- * @author redga
- */
-
 public class Persona{
     //Atributos
     private String nombre;
@@ -51,5 +46,3 @@ public class Persona{
         this.altura = altura;
     }
   }
-
-    
