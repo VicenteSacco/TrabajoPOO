@@ -8,23 +8,19 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-
-/**
- *
- * @author mauro
- */
 public class Fechas extends javax.swing.JFrame {
-
+    public static int variable;
+    public static int variable2;
     /**
      * Creates new form Fechas
      */
     public Fechas() {
         initComponents();
+        setLocationRelativeTo(null);
         llenarTabla();
+        
+        
+        
     }
 
     /**
@@ -40,8 +36,10 @@ public class Fechas extends javax.swing.JFrame {
         Tabla = new javax.swing.JTable();
         ButtonEliminar = new javax.swing.JButton();
         ButtonActualizar = new javax.swing.JButton();
-        ButtonProductos = new javax.swing.JButton();
+        ButtonVerProductos = new javax.swing.JButton();
         ButtonVolver = new javax.swing.JButton();
+        ButtonAgregar = new javax.swing.JButton();
+        BotonDeportes = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,7 +70,12 @@ public class Fechas extends javax.swing.JFrame {
             }
         });
 
-        ButtonProductos.setText("Productos");
+        ButtonVerProductos.setText("Productos");
+        ButtonVerProductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonVerProductosActionPerformed(evt);
+            }
+        });
 
         ButtonVolver.setText("Volver");
         ButtonVolver.addActionListener(new java.awt.event.ActionListener() {
@@ -81,38 +84,64 @@ public class Fechas extends javax.swing.JFrame {
             }
         });
 
+        ButtonAgregar.setText("Agregar");
+        ButtonAgregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonAgregarActionPerformed(evt);
+            }
+        });
+
+        BotonDeportes.setText("Deportes");
+        BotonDeportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonDeportesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap(35, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(ButtonEliminar)
-                        .addGap(18, 18, 18)
-                        .addComponent(ButtonActualizar)
-                        .addGap(18, 18, 18)
-                        .addComponent(ButtonProductos)
-                        .addGap(18, 18, 18)
-                        .addComponent(ButtonVolver)))
-                .addContainerGap(20, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(ButtonAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(ButtonVerProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BotonDeportes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ButtonActualizar, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(ButtonEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(ButtonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ButtonEliminar)
+                    .addComponent(ButtonAgregar)
                     .addComponent(ButtonActualizar)
-                    .addComponent(ButtonProductos)
-                    .addComponent(ButtonVolver))
-                .addContainerGap(24, Short.MAX_VALUE))
+                    .addComponent(ButtonEliminar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ButtonVolver)
+                    .addComponent(ButtonVerProductos)
+                    .addComponent(BotonDeportes))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         pack();
@@ -135,7 +164,7 @@ public class Fechas extends javax.swing.JFrame {
         
         String cadena;
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
-        cadena = JOptionPane.showInputDialog("Ingrese nueva fecha: ");
+        cadena = JOptionPane.showInputDialog("Ingrese nueva fecha: dd/mm/aaaa");
             
             Date fecha = null;
             
@@ -162,6 +191,56 @@ public class Fechas extends javax.swing.JFrame {
         this.setVisible(false);
         
     }//GEN-LAST:event_ButtonVolverActionPerformed
+
+    private void ButtonAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAgregarActionPerformed
+        // TODO add your handling code here:
+            String cadena;
+            SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+            
+            cadena = JOptionPane.showInputDialog("Ingrese nueva fecha: dd/mm/aaaa");
+            
+            Date fecha = null;
+            
+            try {
+                fecha = formato.parse(cadena);
+            } 
+            catch (ParseException ex) {
+                System.out.println(ex);
+            }
+            
+            try{
+                if((fecha.getYear()+1900<=2022)&&(fecha.getYear()+1900>=2021)){
+                    Fecha f = new Fecha();
+                    f.setFecha(fecha);
+                    Principal.ListaFecha.add(f);
+                    JOptionPane.showMessageDialog(null, "Fecha agregada con éxito.");
+                }
+                else
+                    throw new FechaException("Formato de fecha inválido");
+            }catch(Exception e){
+                JOptionPane.showMessageDialog(null, e.getMessage(), "Error", 0);
+            }
+            
+            llenarTabla();
+    }//GEN-LAST:event_ButtonAgregarActionPerformed
+
+    private void ButtonVerProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonVerProductosActionPerformed
+        // TODO add your handling code here:
+         int indicefecha = Tabla.getSelectedRow();
+         variable = indicefecha;
+         Productos ventana = new Productos();
+         ventana.setVisible(true);
+         this.setVisible(false);
+         
+    }//GEN-LAST:event_ButtonVerProductosActionPerformed
+
+    private void BotonDeportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonDeportesActionPerformed
+         int indicefecha = Tabla.getSelectedRow();
+         variable2 = indicefecha;
+         ClaveIntermediaEntreFechasYDeportes ventana = new ClaveIntermediaEntreFechasYDeportes();
+         ventana.setVisible(true);
+         this.setVisible(false);
+    }//GEN-LAST:event_BotonDeportesActionPerformed
     private void llenarTabla(){
         DefaultTableModel modelo = new DefaultTableModel(new String []{"Fechas"},Principal.ListaFecha.size());
         Tabla.setModel(modelo);
@@ -169,7 +248,7 @@ public class Fechas extends javax.swing.JFrame {
         TableModel modelofechas = Tabla.getModel();
         for(int i = 0 ; i < Principal.ListaFecha.size(); i++){
             Fecha fecha = Principal.ListaFecha.get(i);
-            modelofechas.setValueAt(new SimpleDateFormat("dd-MM-yyyy").format(fecha.getFecha()), i, 0);
+            modelofechas.setValueAt(new SimpleDateFormat("dd/MM/yyyy").format(fecha.getFecha()), i, 0);
         }
     }
     /**
@@ -208,9 +287,11 @@ public class Fechas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BotonDeportes;
     private javax.swing.JButton ButtonActualizar;
+    private javax.swing.JButton ButtonAgregar;
     private javax.swing.JButton ButtonEliminar;
-    private javax.swing.JButton ButtonProductos;
+    private javax.swing.JButton ButtonVerProductos;
     private javax.swing.JButton ButtonVolver;
     private javax.swing.JTable Tabla;
     private javax.swing.JScrollPane jScrollPane1;

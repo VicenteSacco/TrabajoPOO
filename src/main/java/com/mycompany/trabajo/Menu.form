@@ -25,24 +25,24 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="170" max="-2" attributes="0"/>
-              <Component id="lblMenu" min="-2" pref="37" max="-2" attributes="0"/>
+              <Component id="LabelMenu" min="-2" pref="37" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="rdbOpcion1" max="32767" attributes="0"/>
-                  <Component id="rdbOpcion2" alignment="1" max="32767" attributes="0"/>
-                  <Component id="rdbOpcion3" alignment="0" max="32767" attributes="0"/>
-                  <Component id="rdbOpcion5" alignment="1" max="32767" attributes="0"/>
-                  <Component id="lblOpcion" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
-                  <Component id="rdbOpcion8" alignment="0" max="32767" attributes="0"/>
-                  <Component id="rdbOpcion7" alignment="0" pref="0" max="32767" attributes="0"/>
-                  <Component id="rdbOpcion6" alignment="0" max="32767" attributes="0"/>
-                  <Component id="rdbOpcion4" alignment="1" max="32767" attributes="0"/>
+                  <Component id="RadioButtonOpcion1" max="32767" attributes="0"/>
+                  <Component id="RadioButtonOpcion2" alignment="1" max="32767" attributes="0"/>
+                  <Component id="RadioButtonOpcion3" alignment="0" max="32767" attributes="0"/>
+                  <Component id="RadioButtonOpcion5" alignment="1" max="32767" attributes="0"/>
+                  <Component id="LabelOpcion" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                  <Component id="RadioButtonOpcion8" alignment="0" max="32767" attributes="0"/>
+                  <Component id="RadioButtonOpcion7" alignment="0" pref="130" max="32767" attributes="0"/>
+                  <Component id="RadioButtonOpcion6" alignment="0" max="32767" attributes="0"/>
+                  <Component id="RadioButtonOpcion4" alignment="1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="118" max="32767" attributes="0"/>
-              <Component id="btnAceptar" min="-2" max="-2" attributes="0"/>
+              <Component id="ButtonAceptar" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -51,120 +51,120 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="lblMenu" min="-2" max="-2" attributes="0"/>
+              <Component id="LabelMenu" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-              <Component id="lblOpcion" min="-2" max="-2" attributes="0"/>
+              <Component id="LabelOpcion" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="rdbOpcion1" min="-2" max="-2" attributes="0"/>
+              <Component id="RadioButtonOpcion1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="rdbOpcion2" min="-2" max="-2" attributes="0"/>
+              <Component id="RadioButtonOpcion2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="rdbOpcion3" min="-2" max="-2" attributes="0"/>
+              <Component id="RadioButtonOpcion3" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="btnAceptar" min="-2" max="-2" attributes="0"/>
+                      <Component id="ButtonAceptar" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="rdbOpcion4" min="-2" max="-2" attributes="0"/>
+                      <Component id="RadioButtonOpcion4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="rdbOpcion5" min="-2" max="-2" attributes="0"/>
+                      <Component id="RadioButtonOpcion5" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="rdbOpcion6" min="-2" max="-2" attributes="0"/>
+              <Component id="RadioButtonOpcion6" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="rdbOpcion7" min="-2" max="-2" attributes="0"/>
+              <Component id="RadioButtonOpcion7" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="rdbOpcion8" min="-2" max="-2" attributes="0"/>
+              <Component id="RadioButtonOpcion8" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="42" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JRadioButton" name="rdbOpcion1">
+    <Component class="javax.swing.JRadioButton" name="RadioButtonOpcion1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Crear Fecha"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbOpcion1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonOpcion1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="rdbOpcion2">
+    <Component class="javax.swing.JRadioButton" name="RadioButtonOpcion2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Imprimir Fecha"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbOpcion2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonOpcion2ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="rdbOpcion3">
+    <Component class="javax.swing.JRadioButton" name="RadioButtonOpcion3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Modificar Fecha"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbOpcion3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonOpcion3ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="rdbOpcion4">
+    <Component class="javax.swing.JRadioButton" name="RadioButtonOpcion4">
       <Properties>
         <Property name="text" type="java.lang.String" value="Eliminar Fecha"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbOpcion4ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonOpcion4ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="rdbOpcion5">
+    <Component class="javax.swing.JRadioButton" name="RadioButtonOpcion5">
       <Properties>
         <Property name="text" type="java.lang.String" value="Crear Producto"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbOpcion5ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonOpcion5ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="rdbOpcion6">
+    <Component class="javax.swing.JRadioButton" name="RadioButtonOpcion6">
       <Properties>
         <Property name="text" type="java.lang.String" value="Imprimir Producto"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbOpcion6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonOpcion6ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="rdbOpcion7">
+    <Component class="javax.swing.JRadioButton" name="RadioButtonOpcion7">
       <Properties>
         <Property name="text" type="java.lang.String" value="Modificar Producto"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbOpcion7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonOpcion7ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="rdbOpcion8">
+    <Component class="javax.swing.JRadioButton" name="RadioButtonOpcion8">
       <Properties>
         <Property name="text" type="java.lang.String" value="Eliminar Producto"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdbOpcion8ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonOpcion8ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblOpcion">
+    <Component class="javax.swing.JLabel" name="LabelOpcion">
       <Properties>
         <Property name="text" type="java.lang.String" value="Elija una opci&#xf3;n:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblMenu">
+    <Component class="javax.swing.JLabel" name="LabelMenu">
       <Properties>
         <Property name="text" type="java.lang.String" value="MEN&#xda;"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnAceptar">
+    <Component class="javax.swing.JButton" name="ButtonAceptar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Aceptar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAceptarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonAceptarActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

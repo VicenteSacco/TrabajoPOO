@@ -1,10 +1,8 @@
 package com.mycompany.trabajo;
 
-
 import javax.swing.JOptionPane;
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.Date;
 
 public class Menu extends javax.swing.JFrame {
@@ -14,6 +12,7 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -25,85 +24,85 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        rdbOpcion1 = new javax.swing.JRadioButton();
-        rdbOpcion2 = new javax.swing.JRadioButton();
-        rdbOpcion3 = new javax.swing.JRadioButton();
-        rdbOpcion4 = new javax.swing.JRadioButton();
-        rdbOpcion5 = new javax.swing.JRadioButton();
-        rdbOpcion6 = new javax.swing.JRadioButton();
-        rdbOpcion7 = new javax.swing.JRadioButton();
-        rdbOpcion8 = new javax.swing.JRadioButton();
-        lblOpcion = new javax.swing.JLabel();
-        lblMenu = new javax.swing.JLabel();
-        btnAceptar = new javax.swing.JButton();
+        RadioButtonOpcion1 = new javax.swing.JRadioButton();
+        RadioButtonOpcion2 = new javax.swing.JRadioButton();
+        RadioButtonOpcion3 = new javax.swing.JRadioButton();
+        RadioButtonOpcion4 = new javax.swing.JRadioButton();
+        RadioButtonOpcion5 = new javax.swing.JRadioButton();
+        RadioButtonOpcion6 = new javax.swing.JRadioButton();
+        RadioButtonOpcion7 = new javax.swing.JRadioButton();
+        RadioButtonOpcion8 = new javax.swing.JRadioButton();
+        LabelOpcion = new javax.swing.JLabel();
+        LabelMenu = new javax.swing.JLabel();
+        ButtonAceptar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        rdbOpcion1.setText("Crear Fecha");
-        rdbOpcion1.setContentAreaFilled(false);
-        rdbOpcion1.addActionListener(new java.awt.event.ActionListener() {
+        RadioButtonOpcion1.setText("Crear Fecha");
+        RadioButtonOpcion1.setContentAreaFilled(false);
+        RadioButtonOpcion1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbOpcion1ActionPerformed(evt);
+                RadioButtonOpcion1ActionPerformed(evt);
             }
         });
 
-        rdbOpcion2.setText("Imprimir Fecha");
-        rdbOpcion2.addActionListener(new java.awt.event.ActionListener() {
+        RadioButtonOpcion2.setText("Imprimir Fecha");
+        RadioButtonOpcion2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbOpcion2ActionPerformed(evt);
+                RadioButtonOpcion2ActionPerformed(evt);
             }
         });
 
-        rdbOpcion3.setText("Modificar Fecha");
-        rdbOpcion3.addActionListener(new java.awt.event.ActionListener() {
+        RadioButtonOpcion3.setText("Modificar Fecha");
+        RadioButtonOpcion3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbOpcion3ActionPerformed(evt);
+                RadioButtonOpcion3ActionPerformed(evt);
             }
         });
 
-        rdbOpcion4.setText("Eliminar Fecha");
-        rdbOpcion4.addActionListener(new java.awt.event.ActionListener() {
+        RadioButtonOpcion4.setText("Eliminar Fecha");
+        RadioButtonOpcion4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbOpcion4ActionPerformed(evt);
+                RadioButtonOpcion4ActionPerformed(evt);
             }
         });
 
-        rdbOpcion5.setText("Crear Producto");
-        rdbOpcion5.addActionListener(new java.awt.event.ActionListener() {
+        RadioButtonOpcion5.setText("Crear Producto");
+        RadioButtonOpcion5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbOpcion5ActionPerformed(evt);
+                RadioButtonOpcion5ActionPerformed(evt);
             }
         });
 
-        rdbOpcion6.setText("Imprimir Producto");
-        rdbOpcion6.addActionListener(new java.awt.event.ActionListener() {
+        RadioButtonOpcion6.setText("Imprimir Producto");
+        RadioButtonOpcion6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbOpcion6ActionPerformed(evt);
+                RadioButtonOpcion6ActionPerformed(evt);
             }
         });
 
-        rdbOpcion7.setText("Modificar Producto");
-        rdbOpcion7.addActionListener(new java.awt.event.ActionListener() {
+        RadioButtonOpcion7.setText("Modificar Producto");
+        RadioButtonOpcion7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbOpcion7ActionPerformed(evt);
+                RadioButtonOpcion7ActionPerformed(evt);
             }
         });
 
-        rdbOpcion8.setText("Eliminar Producto");
-        rdbOpcion8.addActionListener(new java.awt.event.ActionListener() {
+        RadioButtonOpcion8.setText("Eliminar Producto");
+        RadioButtonOpcion8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbOpcion8ActionPerformed(evt);
+                RadioButtonOpcion8ActionPerformed(evt);
             }
         });
 
-        lblOpcion.setText("Elija una opción:");
+        LabelOpcion.setText("Elija una opción:");
 
-        lblMenu.setText("MENÚ");
+        LabelMenu.setText("MENÚ");
 
-        btnAceptar.setText("Aceptar");
-        btnAceptar.addActionListener(new java.awt.event.ActionListener() {
+        ButtonAceptar.setText("Aceptar");
+        ButtonAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAceptarActionPerformed(evt);
+                ButtonAceptarActionPerformed(evt);
             }
         });
 
@@ -113,155 +112,155 @@ public class Menu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(170, 170, 170)
-                .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LabelMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(rdbOpcion1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(rdbOpcion2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(rdbOpcion3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(rdbOpcion5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblOpcion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rdbOpcion8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(rdbOpcion7, javax.swing.GroupLayout.PREFERRED_SIZE, 130, Short.MAX_VALUE)
-                    .addComponent(rdbOpcion6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(rdbOpcion4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(RadioButtonOpcion1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RadioButtonOpcion2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RadioButtonOpcion3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RadioButtonOpcion5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LabelOpcion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RadioButtonOpcion8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RadioButtonOpcion7, javax.swing.GroupLayout.PREFERRED_SIZE, 130, Short.MAX_VALUE)
+                    .addComponent(RadioButtonOpcion6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RadioButtonOpcion4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
-                .addComponent(btnAceptar)
+                .addComponent(ButtonAceptar)
                 .addGap(51, 51, 51))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblMenu)
+                .addComponent(LabelMenu)
                 .addGap(12, 12, 12)
-                .addComponent(lblOpcion)
+                .addComponent(LabelOpcion)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rdbOpcion1)
+                .addComponent(RadioButtonOpcion1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rdbOpcion2)
+                .addComponent(RadioButtonOpcion2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rdbOpcion3)
+                .addComponent(RadioButtonOpcion3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addComponent(btnAceptar))
+                        .addComponent(ButtonAceptar))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rdbOpcion4)
+                        .addComponent(RadioButtonOpcion4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(rdbOpcion5)))
+                        .addComponent(RadioButtonOpcion5)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rdbOpcion6)
+                .addComponent(RadioButtonOpcion6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rdbOpcion7)
+                .addComponent(RadioButtonOpcion7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rdbOpcion8)
+                .addComponent(RadioButtonOpcion8)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void rdbOpcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbOpcion1ActionPerformed
+    private void RadioButtonOpcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonOpcion1ActionPerformed
         // TODO add your handling code here:
-        rdbOpcion1.setSelected(true);
-        rdbOpcion2.setSelected(false);
-        rdbOpcion3.setSelected(false);
-        rdbOpcion4.setSelected(false);
-        rdbOpcion5.setSelected(false);
-        rdbOpcion6.setSelected(false);
-        rdbOpcion7.setSelected(false);
-        rdbOpcion8.setSelected(false);
-    }//GEN-LAST:event_rdbOpcion1ActionPerformed
+        RadioButtonOpcion1.setSelected(true);
+        RadioButtonOpcion2.setSelected(false);
+        RadioButtonOpcion3.setSelected(false);
+        RadioButtonOpcion4.setSelected(false);
+        RadioButtonOpcion5.setSelected(false);
+        RadioButtonOpcion6.setSelected(false);
+        RadioButtonOpcion7.setSelected(false);
+        RadioButtonOpcion8.setSelected(false);
+    }//GEN-LAST:event_RadioButtonOpcion1ActionPerformed
 
-    private void rdbOpcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbOpcion2ActionPerformed
+    private void RadioButtonOpcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonOpcion2ActionPerformed
         // TODO add your handling code here:
-        rdbOpcion1.setSelected(false);
-        rdbOpcion2.setSelected(true);
-        rdbOpcion3.setSelected(false);
-        rdbOpcion4.setSelected(false);
-        rdbOpcion5.setSelected(false);
-        rdbOpcion6.setSelected(false);
-        rdbOpcion7.setSelected(false);
-        rdbOpcion8.setSelected(false);
-    }//GEN-LAST:event_rdbOpcion2ActionPerformed
+        RadioButtonOpcion1.setSelected(false);
+        RadioButtonOpcion2.setSelected(true);
+        RadioButtonOpcion3.setSelected(false);
+        RadioButtonOpcion4.setSelected(false);
+        RadioButtonOpcion5.setSelected(false);
+        RadioButtonOpcion6.setSelected(false);
+        RadioButtonOpcion7.setSelected(false);
+        RadioButtonOpcion8.setSelected(false);
+    }//GEN-LAST:event_RadioButtonOpcion2ActionPerformed
 
-    private void rdbOpcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbOpcion3ActionPerformed
+    private void RadioButtonOpcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonOpcion3ActionPerformed
         // TODO add your handling code here:
-        rdbOpcion1.setSelected(false);
-        rdbOpcion2.setSelected(false);
-        rdbOpcion3.setSelected(true);
-        rdbOpcion4.setSelected(false);
-        rdbOpcion5.setSelected(false);
-        rdbOpcion6.setSelected(false);
-        rdbOpcion7.setSelected(false);
-        rdbOpcion8.setSelected(false);
-    }//GEN-LAST:event_rdbOpcion3ActionPerformed
+        RadioButtonOpcion1.setSelected(false);
+        RadioButtonOpcion2.setSelected(false);
+        RadioButtonOpcion3.setSelected(true);
+        RadioButtonOpcion4.setSelected(false);
+        RadioButtonOpcion5.setSelected(false);
+        RadioButtonOpcion6.setSelected(false);
+        RadioButtonOpcion7.setSelected(false);
+        RadioButtonOpcion8.setSelected(false);
+    }//GEN-LAST:event_RadioButtonOpcion3ActionPerformed
 
-    private void rdbOpcion4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbOpcion4ActionPerformed
+    private void RadioButtonOpcion4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonOpcion4ActionPerformed
         // TODO add your handling code here:
-        rdbOpcion1.setSelected(false);
-        rdbOpcion2.setSelected(false);
-        rdbOpcion3.setSelected(false);
-        rdbOpcion4.setSelected(true);
-        rdbOpcion5.setSelected(false);
-        rdbOpcion6.setSelected(false);
-        rdbOpcion7.setSelected(false);
-        rdbOpcion8.setSelected(false);
-    }//GEN-LAST:event_rdbOpcion4ActionPerformed
+        RadioButtonOpcion1.setSelected(false);
+        RadioButtonOpcion2.setSelected(false);
+        RadioButtonOpcion3.setSelected(false);
+        RadioButtonOpcion4.setSelected(true);
+        RadioButtonOpcion5.setSelected(false);
+        RadioButtonOpcion6.setSelected(false);
+        RadioButtonOpcion7.setSelected(false);
+        RadioButtonOpcion8.setSelected(false);
+    }//GEN-LAST:event_RadioButtonOpcion4ActionPerformed
 
-    private void rdbOpcion5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbOpcion5ActionPerformed
+    private void RadioButtonOpcion5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonOpcion5ActionPerformed
         // TODO add your handling code here:
-        rdbOpcion1.setSelected(false);
-        rdbOpcion2.setSelected(false);
-        rdbOpcion3.setSelected(false);
-        rdbOpcion4.setSelected(false);
-        rdbOpcion5.setSelected(true);
-        rdbOpcion6.setSelected(false);
-        rdbOpcion7.setSelected(false);
-        rdbOpcion8.setSelected(false);
-    }//GEN-LAST:event_rdbOpcion5ActionPerformed
+        RadioButtonOpcion1.setSelected(false);
+        RadioButtonOpcion2.setSelected(false);
+        RadioButtonOpcion3.setSelected(false);
+        RadioButtonOpcion4.setSelected(false);
+        RadioButtonOpcion5.setSelected(true);
+        RadioButtonOpcion6.setSelected(false);
+        RadioButtonOpcion7.setSelected(false);
+        RadioButtonOpcion8.setSelected(false);
+    }//GEN-LAST:event_RadioButtonOpcion5ActionPerformed
 
-    private void rdbOpcion6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbOpcion6ActionPerformed
+    private void RadioButtonOpcion6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonOpcion6ActionPerformed
         // TODO add your handling code here:
-        rdbOpcion1.setSelected(false);
-        rdbOpcion2.setSelected(false);
-        rdbOpcion3.setSelected(false);
-        rdbOpcion4.setSelected(false);
-        rdbOpcion5.setSelected(false);
-        rdbOpcion6.setSelected(true);
-        rdbOpcion7.setSelected(false);
-        rdbOpcion8.setSelected(false);
-    }//GEN-LAST:event_rdbOpcion6ActionPerformed
+        RadioButtonOpcion1.setSelected(false);
+        RadioButtonOpcion2.setSelected(false);
+        RadioButtonOpcion3.setSelected(false);
+        RadioButtonOpcion4.setSelected(false);
+        RadioButtonOpcion5.setSelected(false);
+        RadioButtonOpcion6.setSelected(true);
+        RadioButtonOpcion7.setSelected(false);
+        RadioButtonOpcion8.setSelected(false);
+    }//GEN-LAST:event_RadioButtonOpcion6ActionPerformed
 
-    private void rdbOpcion7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbOpcion7ActionPerformed
+    private void RadioButtonOpcion7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonOpcion7ActionPerformed
         // TODO add your handling code here:
-        rdbOpcion1.setSelected(false);
-        rdbOpcion2.setSelected(false);
-        rdbOpcion3.setSelected(false);
-        rdbOpcion4.setSelected(false);
-        rdbOpcion5.setSelected(false);
-        rdbOpcion6.setSelected(false);
-        rdbOpcion7.setSelected(true);
-        rdbOpcion8.setSelected(false);
-    }//GEN-LAST:event_rdbOpcion7ActionPerformed
+        RadioButtonOpcion1.setSelected(false);
+        RadioButtonOpcion2.setSelected(false);
+        RadioButtonOpcion3.setSelected(false);
+        RadioButtonOpcion4.setSelected(false);
+        RadioButtonOpcion5.setSelected(false);
+        RadioButtonOpcion6.setSelected(false);
+        RadioButtonOpcion7.setSelected(true);
+        RadioButtonOpcion8.setSelected(false);
+    }//GEN-LAST:event_RadioButtonOpcion7ActionPerformed
 
-    private void rdbOpcion8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbOpcion8ActionPerformed
+    private void RadioButtonOpcion8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonOpcion8ActionPerformed
         // TODO add your handling code here:
-        rdbOpcion1.setSelected(false);
-        rdbOpcion2.setSelected(false);
-        rdbOpcion3.setSelected(false);
-        rdbOpcion4.setSelected(false);
-        rdbOpcion5.setSelected(false);
-        rdbOpcion6.setSelected(false);
-        rdbOpcion7.setSelected(false);
-        rdbOpcion8.setSelected(true);
-    }//GEN-LAST:event_rdbOpcion8ActionPerformed
+        RadioButtonOpcion1.setSelected(false);
+        RadioButtonOpcion2.setSelected(false);
+        RadioButtonOpcion3.setSelected(false);
+        RadioButtonOpcion4.setSelected(false);
+        RadioButtonOpcion5.setSelected(false);
+        RadioButtonOpcion6.setSelected(false);
+        RadioButtonOpcion7.setSelected(false);
+        RadioButtonOpcion8.setSelected(true);
+    }//GEN-LAST:event_RadioButtonOpcion8ActionPerformed
 
-    private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
+    private void ButtonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAceptarActionPerformed
         // TODO add your handling code here:
         String cadena;
         
@@ -269,7 +268,7 @@ public class Menu extends javax.swing.JFrame {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
         
         
-        if(rdbOpcion1.isSelected()){
+        if(RadioButtonOpcion1.isSelected()){
             cadena = JOptionPane.showInputDialog("Ingrese nueva fecha: ");
             
             Date fecha = null;
@@ -289,24 +288,24 @@ public class Menu extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Fecha agregada con éxito.");
         }
         
-        if(rdbOpcion2.isSelected()){
+        if(RadioButtonOpcion2.isSelected()){
             Fechas fechas = new Fechas () ;
             fechas.setVisible(true);
             this.setVisible(false);
         }
         
-        if(rdbOpcion3.isSelected()){
+        if(RadioButtonOpcion3.isSelected()){
             Fechas fechas = new Fechas () ;
             fechas.setVisible(true);
             this.setVisible(false);
          }
-        if(rdbOpcion6.isSelected()){
+        if(RadioButtonOpcion6.isSelected()){
             Fechas fechas = new Fechas () ;
             fechas.setVisible(true);
             this.setVisible(false);
         }    
     
-    }//GEN-LAST:event_btnAceptarActionPerformed
+    }//GEN-LAST:event_ButtonAceptarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -344,16 +343,16 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAceptar;
-    private javax.swing.JLabel lblMenu;
-    private javax.swing.JLabel lblOpcion;
-    private javax.swing.JRadioButton rdbOpcion1;
-    private javax.swing.JRadioButton rdbOpcion2;
-    private javax.swing.JRadioButton rdbOpcion3;
-    private javax.swing.JRadioButton rdbOpcion4;
-    private javax.swing.JRadioButton rdbOpcion5;
-    private javax.swing.JRadioButton rdbOpcion6;
-    private javax.swing.JRadioButton rdbOpcion7;
-    private javax.swing.JRadioButton rdbOpcion8;
+    private javax.swing.JButton ButtonAceptar;
+    private javax.swing.JLabel LabelMenu;
+    private javax.swing.JLabel LabelOpcion;
+    private javax.swing.JRadioButton RadioButtonOpcion1;
+    private javax.swing.JRadioButton RadioButtonOpcion2;
+    private javax.swing.JRadioButton RadioButtonOpcion3;
+    private javax.swing.JRadioButton RadioButtonOpcion4;
+    private javax.swing.JRadioButton RadioButtonOpcion5;
+    private javax.swing.JRadioButton RadioButtonOpcion6;
+    private javax.swing.JRadioButton RadioButtonOpcion7;
+    private javax.swing.JRadioButton RadioButtonOpcion8;
     // End of variables declaration//GEN-END:variables
 }

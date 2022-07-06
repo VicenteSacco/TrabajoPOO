@@ -1,20 +1,7 @@
 package com.mycompany.trabajo;
 
-
-import com.mycompany.trabajo.Menu;
-import java.awt.Color;
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-
-/**
- *
- * @author Jorge
- */
 public class Registro extends javax.swing.JFrame {
 
     /**
@@ -22,6 +9,7 @@ public class Registro extends javax.swing.JFrame {
      */
     public Registro() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -33,49 +21,49 @@ public class Registro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblRegistro = new javax.swing.JLabel();
-        lblNombre = new javax.swing.JLabel();
-        lblPeso = new javax.swing.JLabel();
-        lblAltura = new javax.swing.JLabel();
-        txtNombre = new javax.swing.JTextField();
-        txtPeso = new javax.swing.JTextField();
-        txtAltura = new javax.swing.JTextField();
-        btnRegistrar = new javax.swing.JButton();
-        btnLimpiar = new javax.swing.JButton();
+        LabelRegistro = new javax.swing.JLabel();
+        LabelNombre = new javax.swing.JLabel();
+        LabelPeso = new javax.swing.JLabel();
+        LabelAltura = new javax.swing.JLabel();
+        TextFieldNombre = new javax.swing.JTextField();
+        TextFieldPeso = new javax.swing.JTextField();
+        TextFieldAltura = new javax.swing.JTextField();
+        ButtonRegistrarse = new javax.swing.JButton();
+        ButtonLimpiar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblRegistro.setText("REGISTRO");
+        LabelRegistro.setText("REGISTRO");
 
-        lblNombre.setText("Nombre:");
+        LabelNombre.setText("Nombre:");
 
-        lblPeso.setText("Peso:");
+        LabelPeso.setText("Peso:");
 
-        lblAltura.setText("Altura:");
+        LabelAltura.setText("Altura:");
 
-        txtNombre.addActionListener(new java.awt.event.ActionListener() {
+        TextFieldNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombreActionPerformed(evt);
+                TextFieldNombreActionPerformed(evt);
             }
         });
 
-        txtPeso.addActionListener(new java.awt.event.ActionListener() {
+        TextFieldPeso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPesoActionPerformed(evt);
+                TextFieldPesoActionPerformed(evt);
             }
         });
 
-        btnRegistrar.setText("Registrar");
-        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
+        ButtonRegistrarse.setText("Registrarse");
+        ButtonRegistrarse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegistrarActionPerformed(evt);
+                ButtonRegistrarseActionPerformed(evt);
             }
         });
 
-        btnLimpiar.setText("Limpiar");
-        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+        ButtonLimpiar.setText("Limpiar");
+        ButtonLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLimpiarActionPerformed(evt);
+                ButtonLimpiarActionPerformed(evt);
             }
         });
 
@@ -87,92 +75,94 @@ public class Registro extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(164, 164, 164)
-                        .addComponent(lblRegistro))
+                        .addComponent(LabelRegistro))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lblPeso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lblAltura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(LabelNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(LabelPeso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(LabelAltura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(54, 54, 54)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
-                                    .addComponent(txtPeso)
-                                    .addComponent(txtAltura)))
-                            .addComponent(btnRegistrar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnLimpiar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(TextFieldNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                                    .addComponent(TextFieldPeso)
+                                    .addComponent(TextFieldAltura)))
+                            .addComponent(ButtonRegistrarse, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ButtonLimpiar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(74, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblRegistro)
+                .addComponent(LabelRegistro)
                 .addGap(51, 51, 51)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblNombre))
+                    .addComponent(TextFieldNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelNombre))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblPeso))
+                    .addComponent(TextFieldPeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelPeso))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblAltura))
+                    .addComponent(TextFieldAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelAltura))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addComponent(btnRegistrar)
+                .addComponent(ButtonRegistrarse)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnLimpiar)
+                .addComponent(ButtonLimpiar)
                 .addGap(35, 35, 35))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
+    private void TextFieldNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldNombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombreActionPerformed
+    }//GEN-LAST:event_TextFieldNombreActionPerformed
 
-    private void txtPesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPesoActionPerformed
+    private void TextFieldPesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldPesoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPesoActionPerformed
+    }//GEN-LAST:event_TextFieldPesoActionPerformed
 
-    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
+    private void ButtonRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonRegistrarseActionPerformed
         // TODO add your handling code here:
         String nombre;
         float peso, altura;
         
-        nombre = txtNombre.getText();
-        txtNombre.setText("");
+        nombre = TextFieldNombre.getText();
+        TextFieldNombre.setText("");
         
-        peso = Float.valueOf(txtPeso.getText());
-        txtPeso.setText("");
+        peso = Float.valueOf(TextFieldPeso.getText());
+        TextFieldPeso.setText("");
         
-        altura = Float.valueOf(txtAltura.getText());
-        txtAltura.setText("");
+        altura = Float.valueOf(TextFieldAltura.getText());
+        TextFieldAltura.setText("");
         
-        /*
-        System.out.println("Nombre: "+nombre);
-        System.out.println("Peso: "+peso);
-        System.out.println("Altura: "+altura);
-        */
+        try{
+            if(nombre.matches("[A-Za-z]*")){
+                JOptionPane.showMessageDialog(null, "Registro exitoso");
+                Menu m = new Menu();
+                m.setVisible(true);
+                this.setVisible(false);
+            }
+            else
+                throw new NombreException("Formato de nombre inválido");
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Error", 0);
+        }
         
-        Menu m = new Menu();
-        m.setVisible(true);
-        this.setVisible(false);
-        
-        
-    }//GEN-LAST:event_btnRegistrarActionPerformed
+    }//GEN-LAST:event_ButtonRegistrarseActionPerformed
 
-    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+    private void ButtonLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLimpiarActionPerformed
         // TODO add your handling code here:
-        txtNombre.setText("");
-        txtPeso.setText("");
-        txtAltura.setText("");
-    }//GEN-LAST:event_btnLimpiarActionPerformed
+        TextFieldNombre.setText("");
+        TextFieldPeso.setText("");
+        TextFieldAltura.setText("");
+    }//GEN-LAST:event_ButtonLimpiarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -210,14 +200,14 @@ public class Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnLimpiar;
-    private javax.swing.JButton btnRegistrar;
-    private javax.swing.JLabel lblAltura;
-    private javax.swing.JLabel lblNombre;
-    private javax.swing.JLabel lblPeso;
-    private javax.swing.JLabel lblRegistro;
-    private javax.swing.JTextField txtAltura;
-    private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtPeso;
+    private javax.swing.JButton ButtonLimpiar;
+    private javax.swing.JButton ButtonRegistrarse;
+    private javax.swing.JLabel LabelAltura;
+    private javax.swing.JLabel LabelNombre;
+    private javax.swing.JLabel LabelPeso;
+    private javax.swing.JLabel LabelRegistro;
+    private javax.swing.JTextField TextFieldAltura;
+    private javax.swing.JTextField TextFieldNombre;
+    private javax.swing.JTextField TextFieldPeso;
     // End of variables declaration//GEN-END:variables
 }

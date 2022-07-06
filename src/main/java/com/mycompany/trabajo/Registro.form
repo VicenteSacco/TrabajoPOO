@@ -27,26 +27,26 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="164" max="-2" attributes="0"/>
-                      <Component id="lblRegistro" min="-2" max="-2" attributes="0"/>
+                      <Component id="LabelRegistro" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="lblNombre" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="lblPeso" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="lblAltura" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="LabelNombre" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="LabelPeso" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="LabelAltura" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtNombre" alignment="0" pref="162" max="32767" attributes="0"/>
-                                  <Component id="txtPeso" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtAltura" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TextFieldNombre" alignment="0" pref="162" max="32767" attributes="0"/>
+                                  <Component id="TextFieldPeso" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TextFieldAltura" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="btnRegistrar" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnLimpiar" alignment="0" max="32767" attributes="0"/>
+                          <Component id="ButtonRegistrarse" alignment="0" max="32767" attributes="0"/>
+                          <Component id="ButtonLimpiar" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -58,78 +58,78 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="lblRegistro" min="-2" max="-2" attributes="0"/>
+              <Component id="LabelRegistro" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="txtNombre" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblNombre" min="-2" max="-2" attributes="0"/>
+                  <Component id="TextFieldNombre" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="LabelNombre" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtPeso" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblPeso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TextFieldPeso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="LabelPeso" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtAltura" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblAltura" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TextFieldAltura" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="LabelAltura" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="34" max="32767" attributes="0"/>
-              <Component id="btnRegistrar" min="-2" max="-2" attributes="0"/>
+              <Component id="ButtonRegistrarse" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btnLimpiar" min="-2" max="-2" attributes="0"/>
+              <Component id="ButtonLimpiar" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="lblRegistro">
+    <Component class="javax.swing.JLabel" name="LabelRegistro">
       <Properties>
         <Property name="text" type="java.lang.String" value="REGISTRO"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblNombre">
+    <Component class="javax.swing.JLabel" name="LabelNombre">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nombre:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblPeso">
+    <Component class="javax.swing.JLabel" name="LabelPeso">
       <Properties>
         <Property name="text" type="java.lang.String" value="Peso:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblAltura">
+    <Component class="javax.swing.JLabel" name="LabelAltura">
       <Properties>
         <Property name="text" type="java.lang.String" value="Altura:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtNombre">
+    <Component class="javax.swing.JTextField" name="TextFieldNombre">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldNombreActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtPeso">
+    <Component class="javax.swing.JTextField" name="TextFieldPeso">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPesoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextFieldPesoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtAltura">
+    <Component class="javax.swing.JTextField" name="TextFieldAltura">
     </Component>
-    <Component class="javax.swing.JButton" name="btnRegistrar">
+    <Component class="javax.swing.JButton" name="ButtonRegistrarse">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Registrar"/>
+        <Property name="text" type="java.lang.String" value="Registrarse"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegistrarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonRegistrarseActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnLimpiar">
+    <Component class="javax.swing.JButton" name="ButtonLimpiar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Limpiar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimpiarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonLimpiarActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
